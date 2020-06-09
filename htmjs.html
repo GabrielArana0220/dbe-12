@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang = "es">
+
+<head>
+
+<title> Formulario de registro UNSA</title>
+<script type = "text/javascript">
+function valida(f) {
+  if(f.elements[0].value == "")
+  {
+    alert("datos invalidos");
+    ok = false;
+  }
+
+  if(f.elements[1].value == "")
+  {
+    alert("datos invalidos");
+    ok = false;
+  }
+  return ok;
+}
+</script>
+</head>
+<body>
+
+<form id="miForm" action="" method="get" onsubmit="return valida(this)">
+
+Nombre : <input type = "text" id = "nombre" maxlenght="50"><br>
+CUI : <input type = "text" id = "CUI" maxlenght="8"><br>
+
+
+<input type="submit"value="Enviar"><input type="reset">
+</form>
+
+</body>
+</html>
